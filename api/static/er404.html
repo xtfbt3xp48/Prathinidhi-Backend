@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prathinidhi | Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #e6f0ff, #ffffff);
+      color: #333;
+      padding-top: 100px;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    header {
+      background-color: #0b5394;
+      color: #fff;
+      padding: 10px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 999;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      animation: slideDown 1s ease forwards;
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-section img {
+      height: 90px;
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 14px;
+      margin: 0;
+    }
+
+    main {
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeInScale 1s ease-in-out;
+    }
+
+    .error-heading {
+      font-size: 80px;
+      font-weight: bold;
+      color: #0b5394;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .error-subtext {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .btn-home {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #0b5394;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn-home:hover {
+      background-color: #073763;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #0b5394;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      margin-top: 60px;
+      animation: slideUp 1.2s ease-in-out;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: #a8d1ff;
+    }
+
+    /* Animations */
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-100%); }
+      to { transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      .error-heading {
+        font-size: 50px;
+      }
+      .error-subtext {
+        font-size: 18px;
+      }
+      .logo-section img {
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo-section">
+        <img src="/prathinidhi.png" alt="Emblem" />
+        <div>
+          <h1 class="title">Prathinidhi</h1>
+          <p class="subtitle">राष्ट्रीय बहुभाषी विधिक फॉर्म पोर्टल | National Legal Form Portal</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="error-heading">404</div>
+    <div class="error-subtext">Oops! The page you're looking for doesn't exist.</div>
+    <a href="/" class="btn-home">Go to Home</a>
+  </main>
+
+  <footer>
+    <div>प्रथम भारत सरकार परियोजना | A Digital India Initiative</div>
+    <div>सभी अधिकार सुरक्षित | All rights reserved © 2025</div>
+    <div style="margin-top: 10px;">
+      <a href="/privacy">Privacy Policy</a> |
+      <a href="/terms">Terms & Conditions</a> |
+      <a href="/help">Help</a>
+    </div>
+  </footer>
+</body>
+</html>
